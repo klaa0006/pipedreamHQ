@@ -1,8 +1,8 @@
 export default {
   name: "Hello World",
-  version: "0.0.2",
-  key: "hello-world",
-  description: "my first component via CLI development method",
+  version: "0.0.1",
+  key: "klaahsen-hello-world",
+  description: "My first component via CLI development method",
   props: {
     message: {
       type: 'string',
