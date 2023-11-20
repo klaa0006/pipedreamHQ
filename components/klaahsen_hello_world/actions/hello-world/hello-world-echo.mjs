@@ -1,14 +1,18 @@
+import hello from "../../hello-world.app.mjs"
+
 export default {
-  name: "Hello World",
-  version: "0.0.1",
-  key: "klaahsen-hello-world",
+  name: "Hello World Echo",
+  version: "0.0.16",
+  key: "klaahsen-hello-world-echo",
   description: "My first component via CLI development method",
   props: {
+    hello,
     message: {
-      type: 'string',
-      label: 'Message',
-      description: 'Message to log'
-    }
+      propDefinition: [
+        hello,
+        "message",
+      ],
+    },
   },
   type: "action",
   methods: {},
